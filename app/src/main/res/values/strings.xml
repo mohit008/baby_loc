@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BabyLoc</string>
+    <string name="service_name">Monitor Service</string>
+    <string name="unlock">Unlock</string>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CicularProgress">
+        <attr name="cicular_progress" format="float" />
+        <attr name="cicular_max" format="integer" />
+        <attr name="cicular_stroke_with" format="integer" />
+
+        <attr name="cicular_unfinished_color" format="color" />
+        <attr name="cicular_finished_color" format="color" />
+
+        <attr name="cicular_circle_starting_degree" format="integer" />
+        <attr name="cicular_inner_drawable" format="reference" />
+    </declare-styleable>
+</resources>

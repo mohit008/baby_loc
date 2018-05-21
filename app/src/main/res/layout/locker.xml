@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/dark"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:id="@+id/rl1"
+                android:layout_width="200dp"
+                android:layout_height="200dp">
+
+                <baby.watching.view.MyProgressView
+                    android:id="@+id/arc_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:progress="100" />
+
+                <baby.watching.view.MyProgressView
+                    android:id="@+id/arc_tow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <baby.watching.view.MyProgressView
+                    android:id="@+id/arc_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <baby.watching.view.MyProgressView
+                    android:id="@+id/arc_four"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <baby.watching.view.MyProgressView
+                    android:id="@+id/big_arc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="7dp" />
+
+                <TextClock
+                    android:id="@+id/clock"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tvdivider"
+                    android:gravity="bottom|center_horizontal"
+                    android:textSize="40sp" />
+
+                <TextView
+                    android:id="@+id/tvdivider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerInParent="true"/>
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvdivider"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/opensans_light"
+                    android:gravity="center"
+                    android:text="01/12/2017"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <!--<ImageView-->
+        <!--android:id="@+id/bar"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:src="@mipmap/app_icon"/>-->
+        <!--<ProgressBar-->
+        <!--android:id="@+id/p_base"-->
+        <!--style="@style/LinearProgressBar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="3dp"-->
+        <!--android:max="100" />-->
+
+
+    </LinearLayout>
+</RelativeLayout>

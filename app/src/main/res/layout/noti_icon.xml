@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:orientation="vertical">
+
+    <baby.watching.view.MyProgressView
+        android:id="@+id/arc_one"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:progress="100" />
+
+    <ImageView
+        android:id="@+id/noti_icon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerInParent="true" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true">
+
+        <include layout="@layout/badge" />
+    </RelativeLayout>
+</RelativeLayout>

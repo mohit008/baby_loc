@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:text="1:234567890"
+            android:textColor="@color/dark_blue1"
+            android:fontFamily="@font/bellefair_regular"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:text="1:234567890"
+            android:textColor="@color/dark_blue1"
+            android:fontFamily="@font/gildadisplay_regular"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:text="1:234567890"
+            android:textColor="@color/dark_blue1"
+            android:fontFamily="@font/josefinslab_thin"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:text="1:234567890"
+            android:textColor="@color/dark_blue1"
+            android:fontFamily="@font/juliussansone_regular"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:text="1:234567890"
+            android:textColor="@color/dark_blue1"
+            android:fontFamily="@font/opensans_regular"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:text="1:234567890"
+            android:textColor="@color/dark_blue1"
+            android:fontFamily="@font/opensans_light"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:text="1:234567890"
+            android:textColor="@color/dark_blue1"
+            android:fontFamily="@font/quicksand_light"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:text="1:234567890"
+            android:textColor="@color/dark_blue1"
+            android:fontFamily="@font/quicksand_regular"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:text="1:234567890"
+            android:textColor="@color/dark_blue1"
+            android:fontFamily="@font/rasa_light"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:text="1:234567890"
+            android:textColor="@color/dark_blue1"
+            android:fontFamily="@font/scopeone_regular"/>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
