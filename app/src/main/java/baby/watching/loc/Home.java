@@ -1,6 +1,7 @@
 package baby.watching.loc;
 
 import android.app.Activity;
+import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.content.BroadcastReceiver;
 import android.content.ContentResolver;
@@ -277,14 +278,28 @@ public class Home extends Activity implements ActivityCompat.OnRequestPermission
                 } else {
                     date.setText(constantsLocking.getNumDate(date));
                 }
-                NotificationManager nManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
-                NotificationCompat.Builder ncomp = new NotificationCompat.Builder(Home.this);
-                ncomp.setContentTitle("My Notification");
-                ncomp.setContentText("Notification Listener Service Example");
-                ncomp.setTicker("Notification Listener Service Example");
-                ncomp.setSmallIcon(R.mipmap.app_icon);
-                ncomp.setAutoCancel(true);
-                nManager.notify((int)System.currentTimeMillis(),ncomp.build());
+                NotificationManager mNotificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                    if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+                        NotificationChannel channel = new NotificationChannel("default", "YOUR_CHANNEL_NAME",NotificationManager.IMPORTANCE_DEFAULT);
+                        channel.setDescription("YOUR_NOTIFICATION_CHANNEL_DISCRIPTION");
+                        mNotificationManager.createNotificationChannel(channel);
+                    }
+                    NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(getApplicationContext(), "default")
+                            .setSmallIcon(R.mipmap.app_icon)
+                            .setContentTitle("Baby Notification")
+                            .setContentText("Baby showing notification")
+                            .setAutoCancel(true);
+                    mNotificationManager.notify((int)System.currentTimeMillis(), mBuilder.build());
+                }else{
+                    NotificationCompat.Builder ncomp = new NotificationCompat.Builder(Home.this);
+                    ncomp.setContentTitle("Baby Notification");
+                    ncomp.setContentText("Baby showing notification");
+                    ncomp.setTicker("Notification Listener Service Example");
+                    ncomp.setSmallIcon(R.mipmap.app_icon);
+                    ncomp.setAutoCancel(true);
+                    mNotificationManager.notify((int)System.currentTimeMillis(),ncomp.build());
+                }
             }
         });
 

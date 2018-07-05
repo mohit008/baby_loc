@@ -90,7 +90,7 @@ public class MonitorService extends NotificationListenerService implements Senso
         context = this.getApplicationContext();
         getDescriptionContent();
 
-        startTimerforTopCPU();
+//        startTimerforTopCPU();
         super.onCreate();
     }
 
